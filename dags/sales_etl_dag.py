@@ -33,8 +33,8 @@ with DAG(
     dag_id="sales_etl_pipeline",
     default_args=default_args,
     description="ETL Pipeline",
-    schedule="@daily",   # ✅ FIXED
-    start_date=datetime(2024, 1, 1),  # ✅ FIXED
+    schedule="@daily", 
+    start_date=datetime(2024, 1, 1), 
     catchup=False,
 ) as dag:
 
